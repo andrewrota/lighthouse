@@ -107,6 +107,7 @@ class SpeedIndexMetric extends Audit {
       return SpeedIndexMetric.generateAuditResult({
         score: Math.round(score),
         rawValue: Math.round(speedline.speedIndex),
+        displayValue: `${Math.round(speedline.speedIndex)}ms`,
         optimalValue: this.meta.optimalValue,
         extendedInfo: {
           formatter: Formatter.SUPPORTED_FORMATS.SPEEDLINE,
