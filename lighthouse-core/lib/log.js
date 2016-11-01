@@ -108,7 +108,7 @@ class Log {
   }
 
   static log(title) {
-    Log.events.issueStatus(title);
+    Log.events.issueStatus(title, arguments);
     return Log._logToStdErr(title, Array.from(arguments).slice(1));
   }
 
